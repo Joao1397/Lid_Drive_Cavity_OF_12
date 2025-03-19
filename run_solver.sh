@@ -39,8 +39,8 @@ echo -e "
 Start renumberMesh
 "
 
-mpirun -np 8 renumberMesh -overwrite -parallel > log.renumberMesh 2>&1
-# mpirun -np 2 renumberMesh -overwrite -parallel > log.renumberMesh 2>&1
+# mpirun -np 8 renumberMesh -overwrite -parallel > log.renumberMesh 2>&1
+mpirun -np 2 renumberMesh -overwrite -parallel > log.renumberMesh 2>&1
 
 echo -e "
 End renumberMesh
